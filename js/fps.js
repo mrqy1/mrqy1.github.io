@@ -49,3 +49,5 @@ if (window.localStorage.getItem("fpson") == undefined || window.localStorage.get
 } else {
     document.getElementById("fps").style = "display:none!important"
 }
+
+
