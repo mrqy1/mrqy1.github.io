@@ -43,3 +43,22 @@ document.addEventListener("copy", function () {
 })
 
 
+// 分享成功提醒
+document.addEventListener("share", function () {
+    debounce(function () {
+        new Vue({
+            data: function () {
+                this.$notify({
+                    title: "分享成功！",
+                    message: "分享成功，给你一个大大的赞！",
+                    position: 'top-left',
+                    offset: 50,
+                    showClose: true,
+                    type: "success",
+                    duration: 5000
+                });
+            }
+        })
+    }, 300);
+})
+
