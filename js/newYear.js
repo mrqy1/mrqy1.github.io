@@ -62,3 +62,6 @@ var newYear = () => {
 // 开了Pjax的用以下两句
 document.addEventListener('pjax:complete', newYear);
 document.addEventListener('DOMContentLoaded', newYear);
+
+
+
