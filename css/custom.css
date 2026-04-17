@@ -195,9 +195,10 @@ h6::before {
   padding: 1rem;
   position: relative;
   border-radius: 12px;
-  background-image: url(https://tuchuang.voooe.cn/images/2023/01/02/tunian.webp);
+  background-image: url(https://fastly.jsdelivr.net/gh/huangnz/cdn@master/img/newyear-bg.webp);
   background-size: cover;
   background-position: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 #newYear-main * {

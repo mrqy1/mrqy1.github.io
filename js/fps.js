@@ -12,6 +12,7 @@ if (window.localStorage.getItem("fpson") == undefined || window.localStorage.get
     var allFrameCount = 0;
     var lastTime = Date.now();
     var lastFameTime = Date.now();
+    var updateInterval = 2000;
     var loop = function () {
         var now = Date.now();
         var fs = (now - lastFameTime);
@@ -22,7 +23,7 @@ if (window.localStorage.getItem("fpson") == undefined || window.localStorage.get
         allFrameCount++;
         frame++;
 
-        if (now > 1000 + lastTime) {
+        if (now > updateInterval + lastTime) {
             var fps = Math.round((frame * 1000) / (now - lastTime));
             if (fps <= 5) {
                 var kd = `<span style="color:#bd0000">卡成ppt🤢</span>`
